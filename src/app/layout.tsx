@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html data-theme="cupcake" lang="en">
-      <body data-theme="valentine" className="m-8">
+      <body data-theme="valentine" className="m-2 w-auto">
         {children}
       </body>
     </html>

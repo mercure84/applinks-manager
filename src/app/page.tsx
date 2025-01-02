@@ -4,22 +4,18 @@ import { appDescriptions } from "./constants/allApps";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <div className="hero bg-base-200 min-h-screen">
-        <div className="hero-content text-center">
-          <div className="max-w-md">
-            <h1 className="text-5xl font-bold">Our apps</h1>
-          </div>
-        </div>
+    <div className="w-full max-w-screen overflow-x-hidden">
+      <div className="hero-content text-center">
+        <h1 className="text-5xl font-bold">Our apps</h1>
       </div>
-      <main className="grid grid-cols-1 sm:grid-cols-2 gap-8 row-start-2 items-center sm:items-start">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
         {appDescriptions.map((item) => {
           return (
-            <div key={item.order} className="card bg-base-100 w-96 shadow-xl">
+            <div key={item.order} className="card bg-base-100 shadow-xl m-2">
               <figure className="px-10 pt-10">
                 <Image
-                  height={192}
-                  width={192}
+                  height={164}
+                  width={164}
                   src={item.appIcon}
                   alt={item.name}
                   className="rounded-xl"
@@ -42,8 +38,8 @@ export default function Home() {
             </div>
           );
         })}
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+      </div>
+      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center mt-6">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://linkedin.com/julien-marcesse"
@@ -53,11 +49,11 @@ export default function Home() {
           <Image
             aria-hidden
             src={linkedin}
-            alt="Globe icon"
+            alt="LinkedIn icon"
             width={16}
             height={16}
           />
-          Go to linkedin →
+          Go to LinkedIn →
         </a>
       </footer>
     </div>
