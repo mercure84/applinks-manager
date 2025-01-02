@@ -2,8 +2,10 @@
 import Image from "next/image";
 import linkedin from "@/app/assets/linkedin.png";
 import { appDescriptions } from "./constants/allApps";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
   return (
     <div className="w-full max-w-screen overflow-x-hidden">
       <div className="hero-content text-center">
@@ -12,7 +14,7 @@ export default function Home() {
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
         {appDescriptions.map((item) => {
           return (
-            <div key={item.order} className="card bg-base-100 shadow-xl m-2">
+            <div key={item.order} className="card bg-base-200 shadow-xl m-2">
               <figure className="px-10 pt-10">
                 <Image
                   height={164}
@@ -35,6 +37,14 @@ export default function Home() {
                     className="btn btn-outline mx-2"
                   >
                     Share
+                  </button>
+                  <button
+                    onClick={() => {
+                      router.push(`/${item.id}`);
+                    }}
+                    className="btn btn-outline mx-2"
+                  >
+                    Go
                   </button>
                 </div>
                 <p>{item.description}</p>
