@@ -1,6 +1,6 @@
 "use client";
-import { appDescriptions, DescriptionType } from "../page";
 import { AppLinkNavigator } from "../components/AppLinknavigator";
+import { appDescriptions, DescriptionType } from "../constants/allApps";
 
 export default function ReefQuizzLinks() {
   const app = appDescriptions.find(

@@ -1,11 +1,12 @@
 "use client";
 
-import { DescriptionType } from "../page";
 import Image from "next/image";
 import appstoreIcon from "@/app/assets/ios.png";
 import playstoreIcon from "@/app/assets/android.png";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
+import { DescriptionType } from "../constants/allApps";
+import Link from "next/link";
 export const AppLinkNavigator = ({ app }: { app: DescriptionType }) => {
   const router = useRouter();
   console.log("App ? ", app);
@@ -16,7 +17,7 @@ export const AppLinkNavigator = ({ app }: { app: DescriptionType }) => {
     } else if (/Android/i.test(userAgent)) {
       router.push(app.androidUrl);
     }
-  }, [app]);
+  }, [app, router]);
 
   if (!app) {
     return <p>Problème de chargement</p>;
@@ -26,7 +27,7 @@ export const AppLinkNavigator = ({ app }: { app: DescriptionType }) => {
     <div className="flex-col justify-center">
       <div className="flex justify-center">
         <h1 className="text-5xl font-bold text-center">
-          <a href="/">←</a> Télécharger l'application {app.name} !
+          <Link href="/">←</Link> Télécharger l'application {app.name} !
         </h1>
       </div>
       <div className="flex justify-center mt-8">
