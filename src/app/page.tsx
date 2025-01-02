@@ -4,9 +4,9 @@ import caltselfieIcon from "@/app/assets/catselfieicon.webp";
 import mamieicon from "@/app/assets/mamieicon.webp";
 import reefquizzicon from "@/app/assets/reeficon.webp";
 
-type DescriptionType = {
+export type DescriptionType = {
   order: number;
-  id: string;
+  id: "catselfie" | "mamiepaulette" | "reefquizz";
   androidUrl: string;
   iOSUrl: string;
   appIcon: StaticImageData;
