@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import linkedin from "@/app/assets/linkedin.png";
 import { appDescriptions } from "./constants/allApps";
@@ -22,9 +23,20 @@ export default function Home() {
                 />
               </figure>
               <div className="card-body items-center text-center">
-                <h2 className="card-title">
-                  {item.name} <a href={`/${item.id}`}>→</a>
-                </h2>
+                <div className="flex flex-row justify-between">
+                  <h2 className="card-title">{item.name}</h2>
+                  <button
+                    onClick={() => {
+                      navigator.clipboard.writeText(
+                        window.location.href + item.id
+                      );
+                      alert("URL copied to clipboard!");
+                    }}
+                    className="btn btn-outline mx-2"
+                  >
+                    Share
+                  </button>
+                </div>
                 <p>{item.description}</p>
                 <div className="card-actions">
                   <a href={item.androidUrl} className="btn btn-primary">
