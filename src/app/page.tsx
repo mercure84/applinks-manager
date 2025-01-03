@@ -8,8 +8,8 @@ export default function Home() {
   const router = useRouter();
   return (
     <div className="w-full max-w-screen overflow-x-hidden">
-      <div className="hero-content text-center">
-        <h1 className="text-5xl font-bold">Our apps</h1>
+      <div className="flex text-center justify-center my-4">
+        <h1 className="text-5xl font-bold text-center">Our apps</h1>
       </div>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
         {appDescriptions.map((item) => {
