@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.centropyge92.mamiepaulettecooking",
+      "sha256_cert_fingerprints": [
+        "AD:8A:01:B0:20:D4:2F:E9:32:3E:E9:70:0B:04:CC:EA:14:EE:02:22:51:1A:18:36:D1:F2:A8:37:29:BE:18:B7",
+        "FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C"
+      ]
+    }
+  }
+]
