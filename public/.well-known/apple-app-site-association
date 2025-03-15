@@ -7,6 +7,18 @@
         "paths": [
           "/mamiepaulette/*"
         ]
+      },
+      {
+        "appID": "CT58JM2BLA.com.centropygebicolor.reefquizapp",
+        "paths": [
+          "/reefquizz/*"
+        ]
+      },
+      {
+        "appID": "CT58JM2BLA.com.centropyge92.catselfie",
+        "paths": [
+          "/catselfie/*"
+        ]
       }
     ]
   }

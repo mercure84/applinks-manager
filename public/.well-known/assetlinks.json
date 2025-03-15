@@ -9,5 +9,27 @@
         "FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C"
       ]
     }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.centropygebicolor.reefquizapp",
+      "sha256_cert_fingerprints": [
+        "FA:F4:1D:5C:EB:21:CA:6B:CF:01:F8:55:8C:BF:56:AE:42:FF:56:D3:C4:5F:D0:82:E8:0C:50:39:F9:1D:49:BE",
+        "B5:44:F8:1C:B3:E6:85:45:14:F0:F1:D3:5F:3B:BE:A8:CB:A3:46:EC:46:72:EE:87:60:16:BF:CD:46:E7:8C:8F"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.centropyge92.catselfie",
+      "sha256_cert_fingerprints": [
+        "66:57:B3:EB:3E:C6:BD:66:6F:E5:55:DE:40:B7:FB:DB:4D:02:E5:ED:2B:1D:63:7B:CC:AE:2B:50:54:A0:9E:69",
+        "4D:E3:A6:BA:52:DE:36:47:72:FA:74:81:C6:BC:02:2C:68:2E:09:CE:9F:97:B8:6E:13:AA:CE:01:C5:07:A2:EA"
+      ]
+    }
   }
 ]
