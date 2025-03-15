@@ -2,10 +2,11 @@ import { StaticImageData } from "next/image";
 import caltselfieIcon from "@/app/assets/catselfieicon.webp";
 import mamieicon from "@/app/assets/mamieicon.webp";
 import reefquizzicon from "@/app/assets/reeficon.webp";
+import log4AquaIcon from "@/app/assets/log4aqua.png";
 
 export type DescriptionType = {
   order: number;
-  id: "catselfie" | "mamiepaulette" | "reefquizz";
+  id: "catselfie" | "mamiepaulette" | "reefquizz" | "log4aqua";
   androidUrl: string;
   iOSUrl: string;
   appIcon: StaticImageData;
@@ -43,5 +44,14 @@ export const appDescriptions: DescriptionType[] = [
     name: "Reef quizz",
     description: "Test your reef knowledges !",
     appIcon: reefquizzicon,
+  },
+  {
+    order: 3,
+    id: "log4aqua",
+    androidUrl: "",
+    iOSUrl: "",
+    name: "Log4Aqua",
+    description: "A complete log for your aquarium",
+    appIcon: log4AquaIcon,
   },
 ];
