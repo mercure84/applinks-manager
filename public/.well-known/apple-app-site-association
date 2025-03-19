@@ -19,6 +19,12 @@
         "paths": [
           "/catselfie/*"
         ]
+      },
+      {
+        "appID": "CT58JM2BLA.com.centropyge92.log4aqua",
+        "paths": [
+          "/log4aqua/*"
+        ]
       }
     ]
   }
