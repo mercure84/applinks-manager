@@ -50,7 +50,7 @@ export const appDescriptions: DescriptionType[] = [
     id: "log4aqua",
     androidUrl:
       "https://play.google.com/store/apps/details?id=com.centropyge92.log4aqua",
-    iOSUrl: "",
+    iOSUrl: "https://apps.apple.com/fr/app/log4aqua/id6741111679",
     name: "Log4Aqua",
     description: "A complete log for your aquarium",
     appIcon: log4AquaIcon,
