@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "MLux Dev Apps",
-  description: "Reefquizz, CatSelfie, and more!",
+  title: {
+    default: "MLux Dev Apps",
+    template: "%s | MLux Dev Apps",
+  },
+  description: "Mobile App development",
 };
 
 export default function RootLayout({
