@@ -59,7 +59,8 @@ export const appDescriptions: DescriptionType[] = [
   {
     order: 4,
     id: "aisnapforge",
-    androidUrl: "",
+    androidUrl:
+      "https://play.google.com/store/apps/details?id=com.centropyge92.pictureai",
     iOSUrl: "",
     name: "AI SnapForge",
     description:
