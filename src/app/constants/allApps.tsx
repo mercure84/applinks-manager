@@ -3,10 +3,11 @@ import caltselfieIcon from "@/app/assets/catselfieicon.webp";
 import mamieicon from "@/app/assets/mamieicon.webp";
 import reefquizzicon from "@/app/assets/reeficon.webp";
 import log4AquaIcon from "@/app/assets/log4aqua.png";
+import aisnapforgeIcon from "@/app/assets/aisnapforgeIcon.png";
 
 export type DescriptionType = {
   order: number;
-  id: "catselfie" | "mamiepaulette" | "reefquizz" | "log4aqua";
+  id: "catselfie" | "mamiepaulette" | "reefquizz" | "log4aqua" | "aisnapforge";
   androidUrl: string;
   iOSUrl: string;
   appIcon: StaticImageData;
@@ -54,5 +55,15 @@ export const appDescriptions: DescriptionType[] = [
     name: "Log4Aqua",
     description: "A complete log for your aquarium",
     appIcon: log4AquaIcon,
+  },
+  {
+    order: 4,
+    id: "aisnapforge",
+    androidUrl: "",
+    iOSUrl: "",
+    name: "AI SnapForge",
+    description:
+      "Turn photos into art with AI styles like Toon Me, Starter Pack and more !!",
+    appIcon: aisnapforgeIcon,
   },
 ];

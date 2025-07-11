@@ -25,6 +25,18 @@
         "paths": [
           "/log4aqua/*"
         ]
+      },
+      {
+        "appID": "CT58JM2BLA.com.centropyge92.log4aqua",
+        "paths": [
+          "/log4aqua/*"
+        ]
+      },
+      {
+        "appID": "CT58JM2BLA.com.centropyge92.aisnapforge",
+        "paths": [
+          "/aisnapforge/*"
+        ]
       }
     ]
   }

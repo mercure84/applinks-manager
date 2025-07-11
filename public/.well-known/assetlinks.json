@@ -42,5 +42,16 @@
         "51:26:1A:2D:7E:D2:01:DB:DF:83:EE:6E:2E:F6:4A:53:41:8B:7D:D1:5C:C5:61:04:1D:8C:01:85:C5:AB:47:C1"
       ]
     }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.centropyge92.pictureai",
+      "sha256_cert_fingerprints": [
+        "7C:27:65:23:CF:E8:18:38:8C:94:E9:F4:B2:B4:31:7C:A8:02:79:1A:0B:9C:9D:EB:33:02:5B:87:37:CC:CC:9C",
+        "EE:E4:02:81:DC:1E:CA:7C:20:B2:C6:2C:1B:CA:58:DC:07:F7:BB:12:21:C6:26:FD:F4:F1:1B:19:9D:59:8A:EB"
+      ]
+    }
   }
 ]
