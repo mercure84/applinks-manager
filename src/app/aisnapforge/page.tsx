@@ -3,7 +3,7 @@ import { AppLinkNavigator } from "../components/AppLinknavigator";
 import { appDescriptions, DescriptionType } from "../constants/allApps";
 
 const app = appDescriptions.find(
-  (item) => item.id === "catselfie"
+  (item) => item.id === "aisnapforge"
 ) as DescriptionType;
 
 export const metadata: Metadata = {
