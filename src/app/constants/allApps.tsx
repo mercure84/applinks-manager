@@ -61,7 +61,7 @@ export const appDescriptions: DescriptionType[] = [
     id: "aisnapforge",
     androidUrl:
       "https://play.google.com/store/apps/details?id=com.centropyge92.pictureai",
-    iOSUrl: "",
+    iOSUrl: "https://apps.apple.com/fr/app/ai-snapforge/id6747779333",
     name: "AI SnapForge",
     description:
       "Turn photos into art with AI styles like Toon Me, Starter Pack and more !!",
