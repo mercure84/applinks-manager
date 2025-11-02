@@ -4,10 +4,17 @@ import mamieicon from "@/app/assets/mamieicon.webp";
 import reefquizzicon from "@/app/assets/reeficon.webp";
 import log4AquaIcon from "@/app/assets/log4aqua.png";
 import aisnapforgeIcon from "@/app/assets/aisnapforgeIcon.png";
+import phoneBenchInfoIcon from "@/app/assets/phonebenchicon.png";
 
 export type DescriptionType = {
   order: number;
-  id: "catselfie" | "mamiepaulette" | "reefquizz" | "log4aqua" | "aisnapforge";
+  id:
+    | "catselfie"
+    | "mamiepaulette"
+    | "reefquizz"
+    | "log4aqua"
+    | "aisnapforge"
+    | "phonebenchinfo";
   androidUrl: string;
   iOSUrl: string;
   appIcon: StaticImageData;
@@ -66,5 +73,16 @@ export const appDescriptions: DescriptionType[] = [
     description:
       "Turn photos into art with AI styles like Toon Me, Starter Pack and more !!",
     appIcon: aisnapforgeIcon,
+  },
+  {
+    order: 5,
+    id: "phonebenchinfo",
+    androidUrl:
+      "https://play.google.com/store/apps/details?id=com.centropyge92.phonebenchinfo",
+    iOSUrl: "",
+    name: "Phone Bench Info",
+    description:
+      "Get detailed information about your phone's performance and specifications.",
+    appIcon: phoneBenchInfoIcon,
   },
 ];
