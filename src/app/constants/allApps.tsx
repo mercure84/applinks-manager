@@ -79,7 +79,7 @@ export const appDescriptions: DescriptionType[] = [
     id: "phonebenchinfo",
     androidUrl:
       "https://play.google.com/store/apps/details?id=com.centropyge92.phonebenchinfo",
-    iOSUrl: "",
+    iOSUrl: "https://apps.apple.com/fr/app/phone-bench-info/id6753959438",
     name: "Phone Bench Info",
     description:
       "Get detailed information about your phone's performance and specifications.",
